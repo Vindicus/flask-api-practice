@@ -3,6 +3,7 @@ from flask_jwt import jwt_required
 import sqlite3
 from models.item import ItemModel
 
+
 class Item(Resource):
     parser = reqparse.RequestParser()
     parser.add_argument('price',type=float,required=True,help="This field cannot be blank")
